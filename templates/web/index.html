@@ -1,0 +1,423 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="en">
+    
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Gold Power</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" type="image/x-icon" href="{% static 'web/img/favicon.png' %}">
+        <!-- Place favicon.ico in the root directory -->
+
+		<!-- CSS here -->
+        <link rel="stylesheet" href="{% static 'web/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'web/css/animate.min.css' %}">
+        <link rel="stylesheet" href="{% static 'web/css/magnific-popup.css' %}">
+        <link rel="stylesheet" href="{% static 'web/css/fontawesome-all.min.css' %}">
+        <link rel="stylesheet" href="{% static 'web/css/slick.css' %}">
+        <link rel="stylesheet" href="{% static 'web/css/aos.css' %}">
+        <link rel="stylesheet" href="{% static 'web/css/default.css' %}">
+        <link rel="stylesheet" href="{% static 'web/css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'web/css/responsive.css' %}">
+    </head>
+    <body>
+
+        
+        <div id="preloader">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <div class="object" id="object_one"></div>
+                    <div class="object" id="object_two"></div>
+                    <div class="object" id="object_three"></div>
+                </div>
+            </div>
+        </div>
+        
+        <header>
+            
+            <div id="header-sticky" class="main-header transparent-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="main-menu">
+                                <nav class="navbar navbar-expand-lg">
+                                    <a href="#home" class="navbar-brand">
+                                        <img src="{% static 'web/img/logo/logo.png' %}" alt="" width="140px" height="80px">
+                                    </a>
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                                        <span class="navbar-icon"></span>
+                                        <span class="navbar-icon"></span>
+                                        <span class="navbar-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarNav">
+                                        <ul class="navbar-nav ml-auto">
+                                            <li class="nav-item active"><a class="nav-link" href="#home">홈페이지</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="#features">서비스</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="#supplement">표시</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="#order">제품</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="#ingredient">증명서</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="#contact">연락하다</a></li>
+                                        </ul>
+                                    </div>
+                                    
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+
+           
+            <section id="home" class="slider-area slider-bg d-flex align-items-center">
+                <div class="container">
+                    <div class="slider-overflow">
+                        <div class="row">
+                            <div class="col-lg-6 order-0 order-lg-2">
+                                <div class="slider-img text-center text-lg-right text-xl-center position-relative">
+                                    <img src="{% static 'web/img/slider/home.png' %}" alt="img" class="wow fadeInRight" data-wow-delay="0.6s">
+                                    <!-- <img src="{% static 'web/img/slider/slider_shape.png' %}" alt="img" class="slider-shape wow fadeInRight" data-wow-delay="0.3s"> -->
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="slider-content">
+                                    <h2 class="wow fadeInUp" data-wow-delay="0.2s">최고의 <span>동물용 의약품</span>및 용품 찾기</h2>
+                                    <p class="wow fadeInUp" data-wow-delay="0.4s">애완 동물은 인간과 더 비슷합니다. 자랑스러운 애완동물 주인으로서 건강하고 자연스러운 식단을 유지하려면 좋은 식단이 필요합니다. 반려동물을 쉽게 돌볼 수 있도록 노력하는 골드파워의 메인 목표입니다. 여기에서 온라인으로 동물용 의약품을 구입할 수 있으며 동물용 의약품을 제공하므로 비용에 대해 걱정할 필요가 없습니다.</p>
+                                    <div class="slider-btn">
+                                        <a href="#order" class="btn wow fadeInLeft" data-wow-delay="0.6s">제품</a>
+                                        <a href="#contact" class="btn white-btn wow fadeInRight" data-wow-delay="0.6s">연락하다</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="features" class="features-area features-bg">
+                <div class="container">
+                    <div class="section-title text-center mb-55">
+                        <h2>서비스 </h2>
+                        <div class="bar"></div>
+                    <div class="row"> 
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="single-features text-center mb-50">
+                                <div class="features-icon mb-20">
+                                    <img src="{% static 'web/img/icon/features_icon01.png' %}" width="60px" height="60" alt="img">
+                                </div>
+                                <div class="features-content">
+                                    <h5>수의학 실험실 진단</h5>
+                                    <p>골드파우 수의학 연구소 에서는 질병 진단을 돕고, 경주 동물의 성과를 개선하고, 실험실 팀과 의사 소통하고, 실험실에 제출할 수 있습니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="single-features text-center mb-50">
+                                <div class="features-icon mb-20">
+                                    <img src="{% static 'web/img/icon/features_icon02.png' %}" width="60px" height="60" alt="img">
+                                </div>
+                                <div class="features-content">
+                                    <h5>마약 판매</h5>
+                                    <p>우리는 합리적인 가격과 전 세계 배송으로 모든 고효율 동물 제품을 고객에게 제공하기 위해 최선을 다하고 있습니다. 수의사든 동물사든...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="single-features text-center mb-50">
+                                <div class="features-icon mb-20">
+                                    <img src="{% static 'web/img/icon/features_icon03.png' %}" width="60px" height="60" alt="img">
+                                </div>
+                                <div class="features-content">
+                                    <h5>질병 진단 및 치료</h5>
+                                    <p>우리는 토르시넨에서 하루 24시간 일하는 경험 많은 수의사 팀이 있어 질병을 진단하고 치료하고 동물을 돌보고 그들과 소통할 수 있습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </section>
+           
+            <section id="supplement" class="services-area pt-110 pb-120">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-7 col-lg-8 col-md-10">
+                            <div class="section-title text-center mb-55">
+                                <h2>표시</h2>
+                                <div class="bar"></div>
+                                <p>아드위그민 은 복막염, 기계적, 장 또는 요로 폐쇄가 있는 동물, 이 약에 과민증이 있는 동물, 임신 후기 또는 콜린에스테라제 억제제로 치료받은 동물에게 금기입니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <div class="single-delivery-services mb-70 pl-40">
+                                <div class="ds-icon">
+                                    <div class="number">1</div>
+                                </div>
+                                <div class="ds-content">
+                                    <h5>소에서말, 양, 돼지</h5>
+                                    
+                                </div>
+                            </div>
+                            <div class="single-delivery-services mb-70 pl-40">
+                                <div class="ds-icon">
+                                    <div class="number">2</div>
+                                </div>
+                                <div class="ds-content">
+                                    <h5>반추위 아토니</h5>
+                                    
+                                </div>
+                            </div>
+                            <div class="single-delivery-services mb-70 pl-40">
+                                <div class="ds-icon">
+                                    <div class="number">3</div>
+                                </div>
+                                <div class="ds-content">
+                                    <h5>장의 연동을 시작합니다</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 d-none d-xl-block">
+                            <div class="d-services-img">
+                                <img src="{% static 'web/img/slider/gold2.png' %}" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <div class="single-delivery-services mb-70 pl-40">
+                                <div class="ds-icon">
+                                    <div class="number">4</div>
+                                </div>
+                                <div class="ds-content">
+                                    <h5>방광 비우기</h5>
+                                    
+                                </div>
+                            </div>
+                            <div class="single-delivery-services mb-70 pl-40">
+                                <div class="ds-icon">
+                                    <div class="number">5</div>
+                                </div>
+                                <div class="ds-content">
+                                    <h5>골격근 수축 자극</h5>
+                                    
+                                </div>
+                            </div>
+                            <div class="single-delivery-services mb-70 pl-40">
+                                <div class="ds-icon">
+                                    <div class="number">6</div>
+                                </div>
+                                <div class="ds-content">
+                                    <h5>개의 중증 근무력증 치료</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="ingredient" class="doctor-area doctor-bg pt-110 pb-65">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-7 col-lg-8 col-md-10">
+                            <div class="section-title white-title text-center mb-55">
+                                <h2>증명서</h2>
+                                <div class="bar"></div>
+                                <p>우리는 새로운 수의학으로 전환하는 것이 큰 결정이라는 것을 알고 있습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doctor-wrap pl-80 pr-80">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single-doctor mb-55">
+                                    <div class="doctor-thumb">
+                                        <img src="{% static 'web/img/images/doctor_thumb01.jpg' %}" alt="img">
+                                    </div>
+                                    <div class="doctor-content">
+                                        
+                                        <p>동물과 함께 약을 복용하기 전에 정말 배우고 싶다면 먼저 해보세요. 이 약은 말의 에너지 성장과 근육통 완화에 좋습니다.</p>
+                                        <div class="doctor-info">
+                                            <h6>알렉산더 그레이엄 <span>- 수의사</span></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="single-doctor mb-55">
+                                    <div class="doctor-thumb">
+                                        <img src="{% static 'web/img/images/doctor_thumb02.jpg' %}" alt="img">
+                                    </div>
+                                    <div class="doctor-content">
+                                        
+                                        <p>골드파워는 최고의 말 수의사로 적극 추천합니다</p>
+                                        <div class="doctor-info">
+                                            <h6>도레헤 앵글<span>- 수의사</span></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <section id="order" class="perched-area pt-110 pb-120">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-7 col-lg-8 col-md-10">
+                            <div class="section-title text-center mb-55">
+                                <h2>제품</h2>
+                                <div class="bar"></div>
+                                <p>반려동물을 쉽게 돌볼 수 있도록 하는 것이 골드파워의 주요 목표입니다. 여기에서 온라인으로 동물용 의약품을 구입할 수 있으며 동물용 의약품을 제공하므로 비용에 대해 걱정할 필요가 없습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 text-center productimage">
+                            <img src="{% static 'web/img/slider/gold2.png' %}" alt="img">
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="product-details-content">
+                                <h3>골드 파워 50ml</h3>
+                                <h6>$150.00</h6>
+                                <div class="product-rating mb-10">
+                                    <ul>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="fas fa-star"></i></li>
+                                        <li><i class="far fa-star"></i></li>
+                                    </ul>
+                                </div>
+                                <h5>각 1ml에는 다음이 포함됩니다.</h5>
+                                <span>네오스티그민 메틸설페이트: 0.5 mg(0.334 mg 네오스티그민과 동일).</span> <br>
+                                <h5>속성:</h5>
+                                <ul class="point">
+                                    <li>네오스티그민 근육 조절을 자극하기 위해 가장 일반적으로 사용되는 항콜린에스테라제 약물입니다.</li>
+                                    <li>그 작용은 아세틸콜린(ACh)이 일반적으로 가수분해에 의해 분해되는 아세틸콜린스타제(AChE) 결합 부위에 부착되는 것을 경쟁적으로 억제하는 것입니다. 이것은 ACh가 신경근 접합부를 통한 전달을 향상시키는 더 오랜 기간 동안 지속되도록 합니다.</li>
+                                    <li>요로 운동을 활성화</li>
+                                    <li>단시간에 위와 장에 남아있는 음식물을 제거합니다.</li>
+                                    <li>오래 지속되는 속성으로 빠른 고효능</li>
+                                    <li>안전한</li>
+                                </ul>
+                                <div class="product-info">
+                                    <h5>투여량 관리:</h5>
+                                    <span>소, 양, 말 및 돼지:</span>
+                                    <p>1ml/10kg B.Wt. 느린 I.V. 주입.</p>
+                                    <h6>반대 표시:</h6>
+                                    <p>아드위그민 은 복막염, 기계적, 장 또는 요로 폐쇄가 있는 동물, 이 약에 과민증이 있는 동물, 임신 후기 또는 콜린에스테라제 억제제로 치료받은 동물에게 금기입니다.</p>
+                                    <h6>주의 경고:</h6>
+                                    <p>우유를 생산하는 동물에는 사용하지 마십시오.</p>
+                                    <h6>부작용:</h6>
+                                    <p>장 경련과 설사가 발생할 수 있습니다.</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+           
+        </main>
+        
+        <footer id="contact">
+            <div class="footer-wrap pt-100 pb-40" data-background="img/bg/footer_bg.jpg' %}">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="footer-widget mb-50">
+                                <div class="footer-logo mb-35">
+                                    <a href="#home"><img src="{% static 'web/img/logo/logof.png' %}" alt="img" width="140px" height="80px"></a>
+                                </div>
+                                <div class="footer-text">
+                                    <p>반려동물을 쉽게 돌볼 수 있도록 하는 것이 골드파워의 주요 목표입니다. 여기에서 온라인으로 동물용 의약품을 구입할 수 있으며 동물용 의약품을 제공하므로 비용에 대해 걱정할 필요가 없습니다.
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="footer-widget mb-50">
+                                <div class="fw-title mb-30">
+                                    <h5>유용한 링크</h5>
+                                </div>
+                                <div class="fw-link">
+                                    <ul>
+                                        <li><a href="#home"><i class="fas fa-caret-right"></i>홈페이지</a></li>
+                                        <li><a href="#features"><i class="fas fa-caret-right"></i>서비스</a></li>
+                                        <li><a href="#supplement"><i class="fas fa-caret-right"></i>표시</a></li>
+                                        <li><a href="#order"><i class="fas fa-caret-right"></i>제품</a></li>
+                                        <li><a href="#ingredient"><i class="fas fa-caret-right"></i>증명서</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="footer-widget mb-50">
+                                <div class="fw-title mb-30">
+                                    <h5>당신의 마사지를 보내</h5>
+                                </div>
+                                <div class="footer-form">
+                                    <form action="#">
+                                        <input type="email" placeholder="귀하의 이메일">
+                                        <textarea name="message" id="message" placeholder="당신의 마사지"></textarea>
+                                        <button class="btn">제출하다</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-wrap">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-7">
+                            <div class="copyright-text">
+                                <p>저작권 © <span> <a href="#" style="color: #db9c4a;" target="blank">골드 파워</a></span> | 판권 소유</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+
+
+
+
+
+		<!-- JS here -->
+        <script src="{% static 'web/js/vendor/jquery-1.12.4.min.js' %}"></script>
+        <script src="{% static 'web/js/popper.min.js' %}"></script>
+        <script src="{% static 'web/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'web/js/isotope.pkgd.min.js' %}"></script>
+        <script src="{% static 'web/js/one-page-nav-min.js' %}"></script>
+        <script src="{% static 'web/js/slick.min.js' %}"></script>
+        <script src="{% static 'web/js/ajax-form.js' %}"></script>
+        <script src="{% static 'web/js/wow.min.js' %}"></script>
+        <script src="{% static 'web/js/aos.js' %}"></script>
+        <script src="{% static 'web/js/jquery.counterup.min.js' %}"></script>
+        <script src="{% static 'web/js/jquery.waypoints.min.js' %}"></script>
+        <script src="{% static 'web/js/jquery.scrollUp.min.js' %}"></script>
+        <script src="{% static 'web/js/imagesloaded.pkgd.min.js' %}"></script>
+        <script src="{% static 'web/js/jquery.magnific-popup.min.js' %}"></script>
+        <script src="{% static 'web/js/plugins.js' %}"></script>
+        <script src="{% static 'web/js/main.js' %}"></script>
+    </body>
+
+</html>
